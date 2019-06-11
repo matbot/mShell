@@ -1,0 +1,18 @@
+Mathew McDade
+CS 344.400
+Spring 2019
+smallsh
+
+To compile my smallsh:
+1. unzip contents of mmsmallsh.zip to a single directory:
+	$ unzip mmsmallsh.zip
+
+2. open this file, read it.
+
+3. compile smallsh using the included makefile.
+	$ make prog
+
+4. run smallsh:
+	$ ./smallsh
+
+5. do your thing.
