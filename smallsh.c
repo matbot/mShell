@@ -101,7 +101,8 @@ void burnEverything() {
 	while((pid = waitpid(-1,&status,WNOHANG)) > 0) {};
 	//important not to terminate yourself, yet.
 	signal(SIGTERM,SIG_IGN);
-	killpg(getpid(),SIGTERM);
+	kill(0,SIGTERM);
+	while((pid = waitpid(-1,&status,WNOHANG)) > 0) {};
 }
 
 //signal handling tools.
