@@ -1,18 +1,12 @@
 Mathew McDade
-CS 344.400
 Spring 2019
-smallsh
+mShell
 
-To compile my smallsh:
-1. unzip contents of mmsmallsh.zip to a single directory:
-	$ unzip mmsmallsh.zip
+To compile my mShell:
+1. compile smallsh using the included makefile.
+	$ make mshell
 
-2. open this file, read it.
+2. run mShell:
+	$ ./mshell
 
-3. compile smallsh using the included makefile.
-	$ make prog
-
-4. run smallsh:
-	$ ./smallsh
-
-5. do your thing.
+3. do your thing.
