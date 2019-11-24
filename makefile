@@ -18,7 +18,7 @@ OBJS = *.o
 DOCS = *.pdf
 
 #Programs
-PROG = smallsh
+PROG = mshell
 
 #Compressed File
 TAR = cs.tar.bz2
@@ -27,7 +27,7 @@ TAR = cs.tar.bz2
 # BUILD and TAR
 # ###################################################
 
-prog: ${OBJS} ${HEADERS}
+mshell: ${OBJS} ${HEADERS}
 	${CC} ${CFLAGS} ${OBJS} -o ${PROG}
 
 ${OBJS}: ${SRCS}
