@@ -1,5 +1,4 @@
 /* Mathew McDade
- * CS 344
  * Spring 2019
  * smallsh: A simple shell. Supports three builtin functions: cd, status, and exit. All other
  * commands are forked and run using the exec() function. Non-builtin functions can be run in
