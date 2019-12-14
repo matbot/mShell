@@ -85,7 +85,7 @@ void burnZombie() {
 	pid_t zPid;
 	int zStatus;
 	//Don't wait for a zombie to appear, obviously.
-	while(zPid = waitpid(-1,&zStatus,WNOHANG)) {
+	while((zPid = waitpid(0,&zStatus,WNOHANG)) > 0) {
 		if(zPid > 0) {
 			printf("background pid %d is done: ",zPid);
 			reportStatus(zStatus);
